@@ -747,10 +747,19 @@ h3.my-profession
     cursor: pointer;
 }
 
-.portfolio .portfolio-item-inner .portfolio-img img
+.portfolio .portfolio-item-inner .portfolio-img img, .portfolio .portfolio-item-inner .portfolio-img a
 {
     width: 100%;
     display: block;
+    min-height: 231px;
+}
+
+.portfolio .portfolio-item-inner .portfolio-img a {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Veille */
@@ -772,9 +781,11 @@ h3.my-profession
 }
 
 .veille .veille-content .veille-sub-title p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 25px;
     color: var(--text-black-700);
+    max-width: 75%;
+    text-align: justify;
 }
 
 .veille .veille-content .veille-data table {
