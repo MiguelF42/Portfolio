@@ -73,7 +73,7 @@
                                             <p>Date de naissance : <span>3 sep. 2004</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>Âge : <span>19</span></p>
+                                            <p>Âge : <span id="age"></span></p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>Github : <span>MiguelF42</span></p>
@@ -105,98 +105,105 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="education padd-15">
-                                    <h3 class="title">Etudes</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2022 - 2024
-                                                    </h3>
-                                                    <h4 class="timeline-title">BTS Services Aux Organisations option SISR</h4>
-                                                    <p class="timeline-text">
-                                                        Linux Serveur Debian 11/12
-                                                        <br>
-                                                        Windows (Windows 10 & Windows Server 2019)
-                                                        <br>
-                                                        CyberSécurité Kali Linux, CNIL, RGPD
-                                                        <br>
-                                                        Routeur, commutateur, Cisco Packet Tracer, Analyse de Trame
-                                                        <br>
-                                                        Adressage IP, Routage, Sous-réseaux, Sur-réseaux
-                                                    </p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2019 - 2022
-                                                    </h3>
-                                                    <h4 class="timeline-title">Baccalauréat Professionnel Système Numérique option RISC</h4>
-                                                    <p class="timeline-text">
-                                                        Arduino, Raspberry Pi, FlowCode, Ibasic
-                                                        <br>
-                                                        Virtualisation with VMWare and Hyper-V
-                                                        <br>
-                                                        Création de site web avec WordPress
-                                                        <br>
-                                                        Bases du Système Binaire
-                                                        <br>
-                                                        ADSL, Fibre Optique, Modem, Router
-                                                    </p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2018 - 2019
-                                                    </h3>
-                                                    <h4 class="timeline-title">Brevet (mention très bien)</h4>
-                                                    <p class="timeline-text">
-                                                        Méthode d'apprentissage Complexification conceptuelle
-                                                        <br>
-                                                        Bases du développement Web HTML et CSS
-                                                        <br>
-                                                        Les bases du développement logiciel avec C#
-                                                        <br>
-                                                        Montage et installation d'un ordinateur
-                                                        <br>
-                                                        Montage vidéo avec Camtasia Studio 2019
-                                                    </p>
-                                                </div>
-                                            </div>
+                                <div class="timeline-main">
+                                    <div class="timeline-titles">
+                                        <div id="selector"></div>
+                                        <div class="timeline-title-item item active" onclick="etudesClick()">
+                                            <h2>Etudes</h2>
+                                        </div>
+                                        <div class="timeline-title-item item" onclick="experiencesClick()">
+                                            <h2>Expériences</h2>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="experience padd-15">
-                                    <h3 class="title">Expériences</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> Nov. 2022 - Dec. 2022
-                                                    </h3>
-                                                    <h4 class="timeline-title">CGT des territoriaux de Pantin </h4>
-                                                    <p class="timeline-text">--- Développeur Web | Full stack ---</br>Création d'un site web local pour faciliter la circulation de l'information dans la ville. Pour la création du site, utilisation de PHP pour le backend, MySQL pour la base de données, HTML/CSS/JavaScript pour le frontend. Réalisation d'un tutoriel en pdf pour expliquer comment gérer le site web.</p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> Jan. 2022 - Fev. 2022
-                                                    </h3>
-                                                    <h4 class="timeline-title">Groupe Vital</h4>
-                                                    <p class="timeline-text">--- Technicien Réseau ---</br>Supervision des actifs informatiques et des applications. Mise en réseau et déploiement de logiciels avec Microsoft Azure. Gestion des actifs informatiques avec Windows Server 2019. Audit et restauration de l'infrastructure réseau.</p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> Jan. 2019 - Jan. 2019
-                                                    </h3>
-                                                    <h4 class="timeline-title">Proxiserve</h4>
-                                                    <p class="timeline-text">--- Technicien Informatique ---</br>Gestion des actifs informatiques. Vérification des comptes d'entreprise (PayByPhone). Installation de lignes VoIP, masterisation des postes de travail, vérification de l'inventaire des actifs informatiques. Formation des employés à la cybersécurité.</p>
-                                                </div>
+                                    <div class="timeline-content">
+                                        <div id="etudes" class="timeline-content-item item active">
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar"></i> 2022 - 2024
+                                                </h3>
+                                                <h4 class="timeline-title">BTS Services Aux Organisations option SISR</h4>
+                                                <p class="timeline-text">
+                                                    Linux Serveur Debian 11/12
+                                                    <br>
+                                                    Windows (Windows 10 & Windows Server 2019)
+                                                    <br>
+                                                    CyberSécurité Kali Linux, CNIL, RGPD
+                                                    <br>
+                                                    Routeur, commutateur, Cisco Packet Tracer, Analyse de Trame
+                                                    <br>
+                                                    Adressage IP, Routage, Sous-réseaux, Sur-réseaux
+                                                </p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar"></i> 2019 - 2022
+                                                </h3>
+                                                <h4 class="timeline-title">Baccalauréat Professionnel Système Numérique option RISC</h4>
+                                                <p class="timeline-text">
+                                                    Arduino, Raspberry Pi, FlowCode, Ibasic
+                                                    <br>
+                                                    Virtualisation with VMWare and Hyper-V
+                                                    <br>
+                                                    Création de site web avec WordPress
+                                                    <br>
+                                                    Bases du Système Binaire
+                                                    <br>
+                                                    ADSL, Fibre Optique, Modem, Router
+                                                </p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar"></i> 2018 - 2019
+                                                </h3>
+                                                <h4 class="timeline-title">Brevet (mention très bien)</h4>
+                                                <p class="timeline-text">
+                                                    Méthode d'apprentissage Complexification conceptuelle
+                                                    <br>
+                                                    Bases du développement Web HTML et CSS
+                                                    <br>
+                                                    Les bases du développement logiciel avec C#
+                                                    <br>
+                                                    Montage et installation d'un ordinateur
+                                                    <br>
+                                                    Montage vidéo avec Camtasia Studio 2019
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div id="experiences" class="timeline-content-item item">
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar"></i> Septembre. 2023 - Septembre. 2024
+                                                </h3>
+                                                <h4 class="timeline-title">Cenexi </h4>
+                                                <p class="timeline-text">--- Support technicien informatique ---</br>Support informatique, installation & supervision de serveurs, gestion des comptes Active Directory, scripting, déploiement de switch, gestion du VPN, mis en place du protocol 802.1x avec serveur NPS. </p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar"></i> Nov. 2022 - Dec. 2022
+                                                </h3>
+                                                <h4 class="timeline-title">CGT des territoriaux de Pantin </h4>
+                                                <p class="timeline-text">--- Développeur Web | Full stack ---</br>Création d'un site web local pour faciliter la circulation de l'information dans la ville. Pour la création du site, utilisation de PHP pour le backend, MySQL pour la base de données, HTML/CSS/JavaScript pour le frontend. Réalisation d'un tutoriel en pdf pour expliquer comment gérer le site web.</p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar"></i> Jan. 2022 - Fev. 2022
+                                                </h3>
+                                                <h4 class="timeline-title">Groupe Vital</h4>
+                                                <p class="timeline-text">--- Technicien Réseau ---</br>Supervision des actifs informatiques et des applications. Mise en réseau et déploiement de logiciels avec Microsoft Azure. Gestion des actifs informatiques avec Windows Server 2019. Audit et restauration de l'infrastructure réseau.</p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar"></i> Jan. 2019 - Jan. 2019
+                                                </h3>
+                                                <h4 class="timeline-title">Proxiserve</h4>
+                                                <p class="timeline-text">--- Technicien Informatique ---</br>Gestion des actifs informatiques. Vérification des comptes d'entreprise (PayByPhone). Installation de lignes VoIP, masterisation des postes de travail, vérification de l'inventaire des actifs informatiques. Formation des employés à la cybersécurité.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -564,6 +571,7 @@
     <script src="js/style-switcher.js"></script>
     <script src="js/type-fr.js"></script>
     <script src="js/excel-reader.js"></script>
+    <script src="js/a-propos.js"></script>
 </body>
 </html>
 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas praesentium dicta dolore reprehenderit, numquam optio? Expedita veniam molestiae repellendus perferendis asperiores explicabo eum dolores, corrupti totam quidem quae quia quam?
