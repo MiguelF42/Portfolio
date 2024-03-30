@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel FERREIRA | CTX</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/procedure.css">
+    <link rel="stylesheet" href="css/style-switcher.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="dark">
+    <main id="main">
+        <div class="title">
+            <h1>Epreuve E5 : <span class="coloured">CTX</span></h1>
+            <h2>Contexte : <span class="coloured">HSP-GDH</span></h2>
+        </div>
+        <div class="context">
+            <div class="context-box right">
+                <h3>Présentation de l'épreuve E5</h3>
+                <p>
+                    Dans le cadre de la validation de mon BTS, je dois passer l'épreuve E5 qui consiste en la réalisation 
+                    d'une infrastructure complète répondant aux critères liés au contexte qui nous a été assigné en début d'année.
+                    Suite à la création de cette infrastructure, il faut que celle-ci soit validé par nos professeurs. Enfin,
+                    nous devons choisir deux situations professionnelles sur lesquelles nous souhaitons passer l'épreuve finale.
+                    Pour ma part mes deux situations sont le site internet HSP-GDH et le switching. Le jour J, le jury choisira 
+                    l'une des deux situations professionnelles et demandera de réaliser une modification sur celle-ci dans un laps de temps de 1h.
+                    En parallèle il faut rédiger une documentation détaillée des modifications apportées et des raisons de ces modifications.
+                </p>
+            </div>
+            <div class="context-box left">
+                <h3>Présentation du contexte HSP-GDH</h3>
+                <p>
+                    Le contexte qui m'a été assigné est HSP-GDH, qui signifie Hôpital Sud Paris - Général Des Hôpitaux. Un contexte assez spécifique
+                    qui demande une infrastructure solide et sécurisée. L'infrastructure doit être capable de gérer un grand nombre de données
+                    et de les sécuriser. L'infrastructure doit également être capable de gérer un grand nombre de connexions simultanées.
+                    Il est par ailleurs absolument nécessaire que l'infrastructure soit capable de gérer des pics de charge sans pour autant
+                    impacter les utilisateurs et ce même en cas de panne d'un des serveurs. Ceci implique donc une mise en place particulière
+                    favorisant la redondance des serveurs et des données ainsi que la sécurité globale du réseau.
+                </p>
+            </div>
+            <div class="infra">
+                <h3>Schéma de l'infrastructure</h3>
+                <img src="./images/infra.png" alt="Schéma de l'infrastructure du CTX pour le contexte HSP-GDH">
+            </div>
+            <div class="dl-section">
+                <div class="dl-file">
+                    <a href="./asset/CTX/Contexte HSP.docx" download>
+                        <h4>Fichier : contexte HSP-GDH</h4>
+                        <i class="fa-solid fa-file-word coloured"></i>
+                    </a> 
+                </div>
+                <div class="dl-file">
+                    <a href="./asset/CTX/Dossier technique CTX.docx" download>
+                        <h4>Fichier : choix technologique</h4>
+                        <i class="fa-solid fa-file-word coloured"></i>
+                    </a> 
+                </div>
+                <div class="dl-file">
+                    <a href="./asset/CTX/Adressage+VLAN CTX.xlsx" download>
+                        <h4>Fichier : plan d'adressage</h4>
+                        <i class="fa-solid fa-file-excel coloured"></i>
+                    </a> 
+                </div>
+                <div class="dl-file">
+                    <a href="./asset/CTX/procedure/Procédure configuration switchs CTX.docx" download>
+                        <h4>Fichier : procédure switchs</h4>
+                        <i class="fa-solid fa-file-word coloured"></i>
+                    </a> 
+                </div>
+                <div class="dl-file">
+                    <a href="./asset/CTX/procedure/Procédure installation site web CTX.docx" download>
+                        <h4>Fichier : procédure site web</h4>
+                        <i class="fa-solid fa-file-word coloured"></i>
+                    </a> 
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="home-link" id="home-link">
+        <a href="./">
+            <i class="fa-solid fa-house"></i>  
+        </a>   
+    </div>
+    <div class="style-switcher" id="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fa fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas"></i>
+        </div>
+        <!-- <div class="langage s-icon">
+            <i class="fas fa-solid fa-language"></i>
+        </div> -->
+        <h4>Thème Couleurs</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <div id="pass-bg">
+        <div id="pass-display">
+            <h2>Mot de passe :</h2>
+            <input type="password" id="password" placeholder="Mot de passe">
+            <button onclick="checkPassword()">Valider</button>
+        </div>
+    </div>
+    <script src="js/style-switcher.js"></script>
+    <script src="js/CTX.js"></script>
+</body>
+</html>
